@@ -1,0 +1,174 @@
+.hero,
+.hero-bg,
+.hero-bgeffect {
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  position: relative;
+  background-color: #010502;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-bg,
+.hero-bgeffect {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+}
+
+.hero-bg {
+  background-image: url("./../assets/not-spring.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-bgeffect {
+  background: rgb(1, 5, 2);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 5, 2, 1) 0%,
+    rgba(1, 25, 15, 0.95) 100%
+  );
+}
+
+nav {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 10px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-logo img {
+  width: 48px;
+}
+
+.nav-logo span {
+  font-size: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-signin {
+  background-color: #1ea669;
+  padding: 10px 20px;
+  border: 1px solid #1ea669;
+  border-radius: 4px;
+}
+
+.nav-signin:hover {
+  background-color: transparent;
+}
+
+.nav-links a {
+  transition: all 0.3s;
+}
+
+.nav-links a:hover {
+  color: #1ea669;
+}
+
+.hero-display {
+  position: relative;
+  height: 100%;
+}
+
+.hero-content {
+  display: flex;
+  gap: 120px;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-text {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 25px;
+  align-items: flex-start;
+}
+
+.text-highlight {
+  font-size: inherit;
+  color: #34d58d;
+}
+
+.hero-text button {
+  padding: 8px;
+  border: 1px solid #1ea669;
+  background-color: #1ea669;
+  border-radius: 4px;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+.hero-text button:hover {
+  background-color: transparent;
+  color: #1ea669;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  min-width: 320px;
+  width: 100%;
+  max-width: 400px;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .hero-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-image img {
+    min-width: none;
+    width: 320px;
+  }
+}

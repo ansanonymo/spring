@@ -1,0 +1,36 @@
+/** brand **/
+.brand {
+  margin-top: 120px;
+}
+
+.brand h2 {
+  margin-bottom: 20px;
+  font-weight: 550;
+  font-size: 1.4rem;
+}
+
+.brand-icons {
+  width: 100%;
+  display: flex;
+  gap: 80px;
+}
+
+.brand-icon {
+  position: relative;
+}
+
+.brand-icon img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.brand-icon > img + img {
+  transition: all 0.2s ease;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.brand-icon > img + img:hover {
+  opacity: 0;
+}
